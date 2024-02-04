@@ -1,6 +1,5 @@
-package com.kc.navigation_test
+package com.kc.navigation_test.fragment1
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

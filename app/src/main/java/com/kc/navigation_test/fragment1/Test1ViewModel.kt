@@ -1,4 +1,4 @@
-package com.kc.navigation_test
+package com.kc.navigation_test.fragment1
 
 import androidx.lifecycle.ViewModel
 
