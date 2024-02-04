@@ -32,9 +32,16 @@ class Test1Fragment : Fragment() {
                 fragmentTextView.text = "Clicked! ${viewModel.getCount()}"
             }
             navigate.setOnClickListener {
-                findNavController().navigate(R.id.test2Fragment)
+                // Old way
+                //findNavController().navigate(R.id.test2Fragment)
+                // SafeArgs way
+                findNavController().navigate(Test1FragmentDirections.actionTest1FragmentToTest2Fragment())
             }
         }
     }
+
+    /*private fun navigate(directions: NavDirections) {
+        findNavController().navigate(directions)
+    }*/
 
 }
