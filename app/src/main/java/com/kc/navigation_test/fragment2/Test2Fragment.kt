@@ -27,7 +27,9 @@ class Test2Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // Set observers, listeners, etc...
-
+        arguments?.let {
+            binding.titleF2.text = Test2FragmentArgs.fromBundle(it).title
+        }
     }
 
 }

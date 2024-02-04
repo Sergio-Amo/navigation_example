@@ -12,13 +12,20 @@
         tools:layout="@layout/fragment_test1">
         <action
             android:id="@+id/action_test1Fragment_to_test2Fragment"
-            app:destination="@id/test2Fragment" />
+            app:destination="@id/test2Fragment"
+            app:enterAnim="@animator/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim" />
     </fragment>
 
     <fragment
         android:id="@+id/test2Fragment"
         android:name="com.kc.navigation_test.fragment2.Test2Fragment"
         android:label="fragment_test2"
-        tools:layout="@layout/fragment_test2" />
+        tools:layout="@layout/fragment_test2">
+        <argument
+            android:name="title"
+            android:defaultValue="DefaultValue for fragment 2"
+            app:argType="string" />
+    </fragment>
 
 </navigation>

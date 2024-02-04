@@ -35,13 +35,8 @@ class Test1Fragment : Fragment() {
                 // Old way
                 //findNavController().navigate(R.id.test2Fragment)
                 // SafeArgs way
-                findNavController().navigate(Test1FragmentDirections.actionTest1FragmentToTest2Fragment())
+                findNavController().navigate(Test1FragmentDirections.actionTest1FragmentToTest2Fragment("Some data for fragment 2!"))
             }
         }
     }
-
-    /*private fun navigate(directions: NavDirections) {
-        findNavController().navigate(directions)
-    }*/
-
 }
