@@ -8,6 +8,17 @@
     <fragment
         android:id="@+id/test1Fragment"
         android:name="com.kc.navigation_test.fragment1.Test1Fragment"
-        tools:layout="@layout/fragment_test1"/>
+        android:label="fragment_test1"
+        tools:layout="@layout/fragment_test1">
+        <action
+            android:id="@+id/action_test1Fragment_to_test2Fragment"
+            app:destination="@id/test2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/test2Fragment"
+        android:name="com.kc.navigation_test.fragment2.Test2Fragment"
+        android:label="fragment_test2"
+        tools:layout="@layout/fragment_test2" />
 
 </navigation>
