@@ -25,6 +25,12 @@ class Test1Fragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // Set observers, listeners, etc...
+        with(binding){
+            button.setOnClickListener {
+                fragmentTextView.text = "Clicked! ${viewModel.getCount()}"
+            }
+
+        }
     }
 
 }
